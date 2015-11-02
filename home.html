@@ -1,0 +1,90 @@
+<html>
+
+    <head>
+        <title>Practice Page</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                    <div>
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a id="homeLink">Home</a></li>
+                            <li><a id="angLink">AngularJS</a></li>
+                            <li><a id="faLink">Font Awesome</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="jumbotron">
+                <h2>Hello World!</h2>
+                <p>This is the home page, try using the buttons below to view some examples.</p>
+            </div>
+
+            <div id="examples">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="well">
+                                <p>Pick a programming language!</p>
+                                <input type="text" list="languages"/>
+                                <datalist id="languages">
+                                    <option value="HTML">
+                                    <option value="CSS">
+                                    <option value="JavaScript">
+                                    <option value="Java">
+                                    <option value="Ruby">
+                                    <option value="PHP">
+                                    <option value="Go">
+                                    <option value="Erlang">
+                                    <option value="Python">
+                                    <option value="C">
+                                    <option value="C#">
+                                    <option value="C++">
+                                </datalist>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </body>
+
+    <script>
+        $('#homeLink').click(function() {
+            window.location = '/';
+        })
+        $('#angLink').click(function() {
+            window.location = 'angularjs.html';
+        });
+        $('#faLink').click(function() {
+            window.location = 'fontawesome.html';
+        });
+    </script>
+
+    <style>
+        a {
+            cursor: pointer;
+        }
+        .jumbotron {
+            padding: 20px;
+            margin: 80px 0 50px 0;
+        }
+        #examples {
+            margin-top: 50px;
+        }
+        .well {
+            margin: 10px;
+            height: 210px;
+        }
+    </style>
+
+</html>
